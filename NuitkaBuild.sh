@@ -1,0 +1,2 @@
+#!/bin/bash
+python -m nuitka --standalone --plugin-enable=tk-inter,transformers,matplotlib,pyzmq --nofollow-import-to=streamlit,onnxruntime,numpy,transformers,matplotlib,PIL --include-package=tqdm,xml,ctypes,logging,shapely --windows-icon-from-ico=assets/icon.ico --include-data-file=Pic2LaTeX.py=Pic2LaTeX.py --include-data-dir=./assets=assets --include-data-dir=./checkpoints=checkpoints --output-dir=.. --jobs=12 .\Pic2LaTeX.py
